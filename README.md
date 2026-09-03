@@ -1,5 +1,7 @@
 # TGMOBILE COL — Demo Vue 3 + Vite
 
+**GitHub Pages (live):** https://dsrueda3691.github.io/tgmobile-col-demo/
+
 Propuesta web demo para **TGMOBILE COL** (Santa Marta · Soho Bavaria local 2).
 
 **Slogan:** Los mejores con los mejores
