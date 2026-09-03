@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <circle cx="32" cy="32" r="32" fill="#0a0a0a"/>
+  <g fill="#fff" transform="translate(32,33) skewX(-12) translate(-32,-33)">
+    <path d="M12 18h40l-4 8H28v6l14-1v7H20V26h-4z"/>
+    <path d="M28 32h18v14H22V34h6zm6 6v4h8v-4z"/>
+  </g>
+</svg>

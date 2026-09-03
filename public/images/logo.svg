@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="TGMOBILE COL">
+  <circle cx="64" cy="64" r="64" fill="#0a0a0a"/>
+  <g fill="#ffffff" transform="translate(64,64) skewX(-14) translate(-64,-64)">
+    <path fill-rule="evenodd" d="
+      M26 36
+      L98 36
+      L92 50
+      L70 50
+      L82 62
+      L100 62
+      L100 92
+      L52 92
+      L52 76
+      L84 76
+      L84 70
+      L64 70
+      L48 54
+      L48 50
+      L34 50
+      Z
+      M72 70
+      L84 70
+      L84 76
+      L72 76
+      Z
+    "/>
+  </g>
+</svg>

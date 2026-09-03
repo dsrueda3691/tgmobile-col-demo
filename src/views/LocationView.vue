@@ -1,0 +1,46 @@
+<template>
+  <div>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Ubicación</h1>
+        <p>Visítanos en Santa Marta. También hacemos envíos a todo Colombia.</p>
+      </div>
+    </section>
+    <section class="section" style="padding-top:0">
+      <div class="container info-grid">
+        <div class="info-card">
+          <h3>Tienda</h3>
+          <p><strong style="color:var(--text)">TGMOBILE COL</strong></p>
+          <p>Soho Bavaria local 2</p>
+          <p>Santa Marta, Colombia</p>
+          <p style="margin-top:1rem">Slogan: <em>Los mejores con los mejores</em></p>
+        </div>
+        <div class="info-card">
+          <h3>Horarios de atención</h3>
+          <ul>
+            <li>Lunes a sábado: 9:00 – 19:30</li>
+            <li>Domingos y festivos: 9:00 – 16:30</li>
+            <li>Garantía: L–V 9–12 y 14–16</li>
+          </ul>
+        </div>
+        <div class="info-card" style="grid-column: 1 / -1">
+          <h3>Mapa (referencia)</h3>
+          <p style="margin-bottom:1rem">Busca “Soho Bavaria Santa Marta” en Google Maps o Waze.</p>
+          <div style="border-radius:12px;overflow:hidden;border:1px solid var(--border);aspect-ratio:16/9;background:var(--bg-elevated);display:grid;place-items:center;color:var(--text-muted)">
+            <div style="text-align:center;padding:1.5rem">
+              <p style="font-size:1.2rem;margin-bottom:0.5rem">📍 Soho Bavaria · Local 2</p>
+              <p>Santa Marta</p>
+              <a
+                class="btn btn-primary btn-sm"
+                style="margin-top:1rem"
+                href="https://www.google.com/maps/search/?api=1&query=Soho+Bavaria+Santa+Marta"
+                target="_blank"
+                rel="noopener"
+              >Abrir en Maps</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</template>

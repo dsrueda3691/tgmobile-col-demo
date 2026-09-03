@@ -1,0 +1,488 @@
+[
+  {
+    "id": "iph-15-pro-256",
+    "name": "iPhone 15 Pro 256GB",
+    "brand": "Apple",
+    "category": "iphone",
+    "condition": "nuevo",
+    "price": 4899000,
+    "compareAtPrice": 5299000,
+    "storage": "256GB",
+    "image": "/images/products/iphone-15-pro.png",
+    "featured": true,
+    "tags": [
+      "oferta",
+      "destacado",
+      "oferta-dia"
+    ],
+    "season": "remate",
+    "inStock": true,
+    "description": "Titanio, chip A17 Pro, cámara de 48 MP. Excelente desempeño."
+  },
+  {
+    "id": "iph-15-128",
+    "name": "iPhone 15 128GB",
+    "brand": "Apple",
+    "category": "iphone",
+    "condition": "nuevo",
+    "price": 3599000,
+    "compareAtPrice": 3899000,
+    "storage": "128GB",
+    "image": "/images/products/iphone-15.png",
+    "featured": true,
+    "tags": [
+      "oferta"
+    ],
+    "inStock": true,
+    "description": "Dynamic Island, USB-C y cámara de 48 MP."
+  },
+  {
+    "id": "iph-14-pro-128",
+    "name": "iPhone 14 Pro 128GB",
+    "brand": "Apple",
+    "category": "iphone",
+    "condition": "seminuevo",
+    "price": 2899000,
+    "compareAtPrice": 3199000,
+    "storage": "128GB",
+    "batteryPercent": 92,
+    "image": "/images/products/iphone-14-pro.png",
+    "featured": true,
+    "tags": [
+      "seminuevo",
+      "oferta"
+    ],
+    "inStock": true,
+    "description": "Always-On Display, ProMotion 120 Hz. Batería al 92%."
+  },
+  {
+    "id": "iph-13-128",
+    "name": "iPhone 13 128GB",
+    "brand": "Apple",
+    "category": "iphone",
+    "condition": "seminuevo",
+    "price": 1999000,
+    "storage": "128GB",
+    "batteryPercent": 88,
+    "image": "/images/products/iphone-13.png",
+    "featured": false,
+    "tags": [
+      "seminuevo"
+    ],
+    "inStock": true,
+    "description": "A15 Bionic, doble cámara, 5G. Estado impecable."
+  },
+  {
+    "id": "iph-12-64",
+    "name": "iPhone 12 64GB",
+    "brand": "Apple",
+    "category": "usados-seminuevos",
+    "condition": "usado",
+    "price": 1299000,
+    "storage": "64GB",
+    "batteryPercent": 84,
+    "image": "/images/products/iphone-12.png",
+    "featured": false,
+    "tags": [
+      "usado"
+    ],
+    "inStock": true,
+    "description": "Diseño Ceramic Shield, 5G. Ideal para uso diario."
+  },
+  {
+    "id": "iph-11-64",
+    "name": "iPhone 11 64GB",
+    "brand": "Apple",
+    "category": "usados-seminuevos",
+    "condition": "usado",
+    "price": 899000,
+    "storage": "64GB",
+    "batteryPercent": 86,
+    "image": "/images/products/iphone-11.png",
+    "featured": false,
+    "tags": [
+      "usado",
+      "remate",
+      "oferta-dia"
+    ],
+    "season": "remate",
+    "inStock": true,
+    "description": "Doble cámara, gran autonomía. Precio remate."
+  },
+  {
+    "id": "iph-16-pro-max",
+    "name": "iPhone 16 Pro Max 256GB",
+    "brand": "Apple",
+    "category": "iphone",
+    "condition": "nuevo",
+    "price": 6299000,
+    "compareAtPrice": 6599000,
+    "storage": "256GB",
+    "image": "/images/products/iphone-16-pro-max.png",
+    "featured": true,
+    "tags": [
+      "nuevo",
+      "destacado"
+    ],
+    "inStock": true,
+    "description": "Lo último de Apple. Cámara Fusion y botón de Control de Cámara."
+  },
+  {
+    "id": "sam-s24-256",
+    "name": "Samsung Galaxy S24 256GB",
+    "brand": "Samsung",
+    "category": "otras-marcas",
+    "condition": "nuevo",
+    "price": 2999000,
+    "compareAtPrice": 3299000,
+    "storage": "256GB",
+    "image": "/images/products/samsung-s24.png",
+    "featured": true,
+    "tags": [
+      "oferta",
+      "android",
+      "oferta-dia"
+    ],
+    "inStock": true,
+    "description": "Galaxy AI, pantalla Dynamic AMOLED 2X."
+  },
+  {
+    "id": "sam-a55-128",
+    "name": "Samsung Galaxy A55 128GB",
+    "brand": "Samsung",
+    "category": "otras-marcas",
+    "condition": "nuevo",
+    "price": 1299000,
+    "storage": "128GB",
+    "image": "/images/products/samsung-a55.png",
+    "featured": false,
+    "tags": [
+      "android"
+    ],
+    "inStock": true,
+    "description": "Gama media premium con IP67 y gran batería."
+  },
+  {
+    "id": "xia-14t-256",
+    "name": "Xiaomi 14T 256GB",
+    "brand": "Xiaomi",
+    "category": "otras-marcas",
+    "condition": "nuevo",
+    "price": 1699000,
+    "compareAtPrice": 1899000,
+    "storage": "256GB",
+    "image": "/images/products/xiaomi-14t.png",
+    "featured": true,
+    "tags": [
+      "oferta",
+      "android"
+    ],
+    "season": "remate",
+    "inStock": true,
+    "description": "Leica optics, carga rápida 67W."
+  },
+  {
+    "id": "mot-edge-50",
+    "name": "Motorola Edge 50 Fusion",
+    "brand": "Motorola",
+    "category": "otras-marcas",
+    "condition": "nuevo",
+    "price": 1199000,
+    "storage": "256GB",
+    "image": "/images/products/moto-edge50.png",
+    "featured": false,
+    "tags": [
+      "android"
+    ],
+    "inStock": true,
+    "description": "Pantalla pOLED curva, IP68 y estilo premium."
+  },
+  {
+    "id": "opp-reno12",
+    "name": "OPPO Reno12 5G 256GB",
+    "brand": "OPPO",
+    "category": "otras-marcas",
+    "condition": "nuevo",
+    "price": 1499000,
+    "storage": "256GB",
+    "image": "/images/products/oppo-reno12.png",
+    "featured": false,
+    "tags": [
+      "android"
+    ],
+    "inStock": true,
+    "description": "Diseño delgado, IA fotográfica y carga SuperVOOC."
+  },
+  {
+    "id": "sam-s23-u-usado",
+    "name": "Samsung Galaxy S23 Ultra",
+    "brand": "Samsung",
+    "category": "usados-seminuevos",
+    "condition": "seminuevo",
+    "price": 2499000,
+    "compareAtPrice": 2799000,
+    "storage": "256GB",
+    "batteryPercent": 91,
+    "image": "/images/products/samsung-s23u.png",
+    "featured": true,
+    "tags": [
+      "seminuevo",
+      "oferta"
+    ],
+    "inStock": true,
+    "description": "S Pen incluido, 200 MP. Casi nuevo."
+  },
+  {
+    "id": "xia-redmi-note13",
+    "name": "Redmi Note 13 Pro",
+    "brand": "Xiaomi",
+    "category": "usados-seminuevos",
+    "condition": "usado",
+    "price": 799000,
+    "storage": "256GB",
+    "batteryPercent": 89,
+    "image": "/images/products/redmi-note13.png",
+    "featured": false,
+    "tags": [
+      "usado",
+      "remate",
+      "oferta-dia"
+    ],
+    "season": "remate",
+    "inStock": true,
+    "description": "Gran batería y cámara de 200 MP a precio remate."
+  },
+  {
+    "id": "ipad-air-m2",
+    "name": "iPad Air M2 128GB Wi-Fi",
+    "brand": "Apple",
+    "category": "ipad",
+    "condition": "nuevo",
+    "price": 2899000,
+    "compareAtPrice": 3099000,
+    "storage": "128GB",
+    "image": "/images/products/ipad-air.png",
+    "featured": true,
+    "tags": [
+      "oferta",
+      "ipad"
+    ],
+    "inStock": true,
+    "description": "Chip M2, Liquid Retina de 11\". Ideal estudio y creativos."
+  },
+  {
+    "id": "ipad-10",
+    "name": "iPad 10.ª gen 64GB",
+    "brand": "Apple",
+    "category": "ipad",
+    "condition": "nuevo",
+    "price": 1699000,
+    "storage": "64GB",
+    "image": "/images/products/ipad-10.png",
+    "featured": false,
+    "tags": [
+      "ipad"
+    ],
+    "inStock": true,
+    "description": "USB-C, chip A14. Perfecto para clases y entretenimiento."
+  },
+  {
+    "id": "ipad-pro-11-semi",
+    "name": "iPad Pro 11\" M1 128GB",
+    "brand": "Apple",
+    "category": "ipad",
+    "condition": "seminuevo",
+    "price": 2299000,
+    "storage": "128GB",
+    "batteryPercent": 90,
+    "image": "/images/products/ipad-pro.png",
+    "featured": false,
+    "tags": [
+      "seminuevo",
+      "ipad"
+    ],
+    "inStock": true,
+    "description": "ProMotion 120 Hz, Face ID. Estado excelente."
+  },
+  {
+    "id": "mac-air-m3",
+    "name": "MacBook Air 13\" M3 256GB",
+    "brand": "Apple",
+    "category": "macbook",
+    "condition": "nuevo",
+    "price": 4999000,
+    "compareAtPrice": 5399000,
+    "storage": "256GB",
+    "image": "/images/products/macbook-air-m3.png",
+    "featured": true,
+    "tags": [
+      "oferta",
+      "macbook",
+      "destacado"
+    ],
+    "inStock": true,
+    "description": "Silencioso, hasta 18 h de batería. Productividad total."
+  },
+  {
+    "id": "mac-air-m2-semi",
+    "name": "MacBook Air 13\" M2 256GB",
+    "brand": "Apple",
+    "category": "macbook",
+    "condition": "seminuevo",
+    "price": 3899000,
+    "storage": "256GB",
+    "batteryPercent": 93,
+    "image": "/images/products/macbook-air-m2.png",
+    "featured": true,
+    "tags": [
+      "seminuevo",
+      "macbook"
+    ],
+    "inStock": true,
+    "description": "Diseño delgado, chip M2. Casi sin uso."
+  },
+  {
+    "id": "mac-pro-14",
+    "name": "MacBook Pro 14\" M3 512GB",
+    "brand": "Apple",
+    "category": "macbook",
+    "condition": "nuevo",
+    "price": 7999000,
+    "storage": "512GB",
+    "image": "/images/products/macbook-pro.png",
+    "featured": false,
+    "tags": [
+      "macbook"
+    ],
+    "inStock": true,
+    "description": "Liquid Retina XDR, pro para edición y desarrollo."
+  },
+  {
+    "id": "acc-cargador-20w",
+    "name": "Cargador USB-C 20W Original",
+    "brand": "Apple",
+    "category": "accesorios",
+    "condition": "nuevo",
+    "price": 119000,
+    "compareAtPrice": 149000,
+    "image": "/images/products/charger-20w.png",
+    "featured": false,
+    "tags": [
+      "cargadores",
+      "oferta"
+    ],
+    "inStock": true,
+    "description": "Carga rápida oficial para iPhone y iPad."
+  },
+  {
+    "id": "acc-cargador-45w",
+    "name": "Cargador Samsung 45W",
+    "brand": "Samsung",
+    "category": "accesorios",
+    "condition": "nuevo",
+    "price": 99000,
+    "image": "/images/products/charger-45w.png",
+    "featured": false,
+    "tags": [
+      "cargadores"
+    ],
+    "inStock": true,
+    "description": "Super Fast Charging 2.0 para Galaxy."
+  },
+  {
+    "id": "acc-airpods-pro2",
+    "name": "AirPods Pro (2.ª gen) USB-C",
+    "brand": "Apple",
+    "category": "accesorios",
+    "condition": "nuevo",
+    "price": 999000,
+    "compareAtPrice": 1099000,
+    "image": "/images/products/airpods-pro.png",
+    "featured": true,
+    "tags": [
+      "audifonos",
+      "oferta"
+    ],
+    "inStock": true,
+    "description": "ANC adaptativo, audio espacial y estuche MagSafe."
+  },
+  {
+    "id": "acc-buds3-pro",
+    "name": "Galaxy Buds3 Pro",
+    "brand": "Samsung",
+    "category": "accesorios",
+    "condition": "nuevo",
+    "price": 699000,
+    "image": "/images/products/galaxy-buds.png",
+    "featured": false,
+    "tags": [
+      "audifonos"
+    ],
+    "inStock": true,
+    "description": "ANC inteligente y diseño premium Galaxy AI."
+  },
+  {
+    "id": "acc-jbl-flip6",
+    "name": "Parlante JBL Flip 6",
+    "brand": "JBL",
+    "category": "accesorios",
+    "condition": "nuevo",
+    "price": 449000,
+    "compareAtPrice": 499000,
+    "image": "/images/products/jbl-flip6.png",
+    "featured": true,
+    "tags": [
+      "parlantes",
+      "oferta",
+      "oferta-dia"
+    ],
+    "season": "remate",
+    "inStock": true,
+    "description": "IP67, sonido potente y hasta 12 h de batería."
+  },
+  {
+    "id": "acc-sony-xb100",
+    "name": "Sony SRS-XB100",
+    "brand": "Sony",
+    "category": "accesorios",
+    "condition": "nuevo",
+    "price": 279000,
+    "image": "/images/products/sony-xb100.png",
+    "featured": false,
+    "tags": [
+      "parlantes"
+    ],
+    "inStock": true,
+    "description": "Compacto, resistente al agua, graves Extra Bass."
+  },
+  {
+    "id": "acc-cable-usbc",
+    "name": "Cable USB-C a Lightning 1m",
+    "brand": "Apple",
+    "category": "accesorios",
+    "condition": "nuevo",
+    "price": 89000,
+    "image": "/images/products/cable-usbc.png",
+    "featured": false,
+    "tags": [
+      "cargadores"
+    ],
+    "inStock": true,
+    "description": "Cable certificado para carga y datos."
+  },
+  {
+    "id": "acc-magsafe",
+    "name": "Cargador MagSafe",
+    "brand": "Apple",
+    "category": "accesorios",
+    "condition": "nuevo",
+    "price": 189000,
+    "image": "/images/products/magsafe.png",
+    "featured": false,
+    "tags": [
+      "cargadores"
+    ],
+    "inStock": true,
+    "description": "Carga inalámbrica magnética hasta 15W."
+  }
+]

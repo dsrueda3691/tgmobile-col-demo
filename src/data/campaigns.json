@@ -1,0 +1,18 @@
+{
+  "active": true,
+  "id": "remate-septiembre",
+  "title": "Remate de temporada",
+  "subtitle": "Ofertas seleccionadas · precios de ejemplo · envíos a todo Colombia",
+  "badge": "REMATE",
+  "cta": "Ver remates",
+  "ctaQuery": "tags=remate",
+  "season": "remate",
+  "theme": "dark-gold",
+  "dailyDeals": [
+    "iph-15-pro-256",
+    "iph-11-64",
+    "xia-redmi-note13",
+    "acc-jbl-flip6"
+  ],
+  "dailyDealsTitle": "Ofertas del día"
+}
