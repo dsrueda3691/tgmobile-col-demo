@@ -4,7 +4,7 @@
 
 Propuesta web demo para **TGMOBILE COL** (Santa Marta · Soho Bavaria local 2).
 
-**Slogan:** Los mejores con los mejores
+
 
 > Banner permanente: *DEMO DE PROPUESTA — precios de ejemplo*
 
@@ -25,37 +25,9 @@ npm run build
 npm run preview
 ```
 
-## Cómo agregar o quitar productos
 
-1. Edita `src/data/products.json`.
-2. Cada producto debe incluir al menos:
 
-| Campo | Tipo | Notas |
-|-------|------|--------|
-| `id` | string | Único (URL: `/producto/:id`) |
-| `name` | string | Nombre visible |
-| `brand` | string | Apple, Samsung, etc. |
-| `category` | string | `iphone`, `otras-marcas`, `usados-seminuevos`, `ipad`, `macbook`, `accesorios` |
-| `condition` | string | `nuevo` \| `seminuevo` \| `usado` |
-| `price` | number | COP |
-| `compareAtPrice` | number? | Precio tachado (opcional) |
-| `storage` | string? | Ej. `256GB` |
-| `batteryPercent` | number? | Para semi/usados |
-| `image` | string | Ruta bajo `/public` |
-| `featured` | boolean | Aparece en Destacados |
-| `tags` | string[] | Ej. `oferta`, `remate`, `cargadores`, `audifonos`, `parlantes` |
-| `season` | string? | Ej. `remate` (campañas) |
-| `inStock` | boolean | Stock |
-| `description` | string | Texto corto |
 
-3. Guarda el archivo: el home, las tarjetas de sección y el catálogo se actualizan solos (cuentan y filtran desde el JSON).
-
-### Campañas / remates
-
-Edita `src/data/campaigns.json`:
-
-- `active: true` muestra el banner de temporada.
-- Productos con `season` igual a `campaign.season` o tags `remate`/`oferta` alimentan la sección de ofertas.
 
 ## Estructura
 
@@ -69,7 +41,7 @@ src/
   assets/       # CSS global
 ```
 
-## Contacto de la marca (demo)
+## Contacto de la marca 
 
 - IG [@tgmobile.col](https://instagram.com/tgmobile.col)
 - WhatsApp ventas: https://wa.me/573242372232
