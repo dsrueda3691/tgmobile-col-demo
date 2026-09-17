@@ -1,3 +1,9 @@
+<script setup>
+import ViewHighlights from '../components/ViewHighlights.vue'
+
+const highlights = [{ icon: '⌖', value: 'Local 2', label: 'Soho Bavaria' }, { icon: '09–19', value: 'L–S', label: 'Horario de tienda' }, { icon: '▣', value: 'Colombia', label: 'Envíos nacionales' }]
+</script>
+
 <template>
   <div>
     <section class="page-hero">
@@ -6,6 +12,7 @@
         <p>Visítanos en Santa Marta. También hacemos envíos a todo Colombia.</p>
       </div>
     </section>
+    <ViewHighlights :items="highlights" />
     <section class="section" style="padding-top:0">
       <div class="container info-grid">
         <div class="info-card">
@@ -44,3 +51,7 @@
     </section>
   </div>
 </template>
+
+<style scoped>
+.info-card { min-height: 12rem; }.info-card[style*="grid-column"] { min-height: 20rem; }.info-card a { transition: transform .25s ease; }.info-card a:hover { transform: translateY(-2px); }
+</style>

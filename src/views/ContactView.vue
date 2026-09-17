@@ -1,5 +1,6 @@
 <script setup>
 import { whatsappLink, WHATSAPP } from '../composables/useProducts'
+import ViewHighlights from '../components/ViewHighlights.vue'
 
 const channels = [
   {
@@ -21,6 +22,7 @@ const channels = [
     href: whatsappLink(WHATSAPP.postventa, 'Hola TGMOBILE COL, necesito postventa / garantía.')
   }
 ]
+const highlights = [{ icon: '⌁', value: '3', label: 'Canales especializados' }, { icon: '24', value: '24 h', label: 'Respuesta ágil' }, { icon: '◎', value: '@tgmobile.col', label: 'Estamos en Instagram' }]
 </script>
 
 <template>
@@ -31,6 +33,7 @@ const channels = [
         <p>Escríbenos por WhatsApp o síguenos en Instagram. Envíos a todo Colombia.</p>
       </div>
     </section>
+    <ViewHighlights :items="highlights" />
     <section class="section" style="padding-top:0">
       <div class="container info-grid">
         <div v-for="c in channels" :key="c.title" class="info-card">
@@ -49,3 +52,7 @@ const channels = [
     </section>
   </div>
 </template>
+
+<style scoped>
+.info-card { min-height: 11rem; }.info-card h3 { letter-spacing: -.02em; }.info-card .btn { margin-top: .4rem; }
+</style>

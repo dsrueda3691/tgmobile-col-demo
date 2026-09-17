@@ -107,3 +107,8 @@ function clearAll() {
     </div>
   </div>
 </template>
+
+<style scoped>
+.filters { display: grid; gap: .75rem; margin-bottom: 1.5rem; padding: 1rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--grad-surface); box-shadow: var(--shadow-soft); }.field { display: grid; gap: .35rem; }.field label { color: var(--text-muted); font-size: .75rem; letter-spacing: .06em; text-transform: uppercase; }.field input, .field select { width: 100%; padding: .65rem .75rem; border: 1px solid var(--border); border-radius: var(--radius-sm); outline: none; background: #22252a; color: var(--text); }.price-fields { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; }.filters-actions { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; }.filters-actions .btn { flex: 1 1 auto; min-width: 140px; }
+@media (min-width: 800px) { .filters { grid-template-columns: 1.4fr repeat(3, minmax(0, 1fr)); align-items: end; }.filters-actions { grid-column: 1 / -1; } }
+</style>

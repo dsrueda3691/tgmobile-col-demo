@@ -2,8 +2,31 @@ import { computed } from 'vue'
 import productsData from '../data/products.json'
 import campaignsData from '../data/campaigns.json'
 
-const products = productsData
+const REAL_PRODUCT_IMAGES = {
+  iphone: '/images/real/smartphone-iphone.jpg',
+  android: '/images/real/smartphone-android.jpg',
+  ipad: '/images/real/tablet-ipad.jpg',
+  macbook: '/images/real/laptop-macbook.jpg',
+  earbuds: '/images/real/earbuds.jpg',
+  speaker: '/images/real/speaker.jpg'
+}
+
+const products = productsData.map((product) => {
+  const tags = product.tags || []
+  let image = REAL_PRODUCT_IMAGES.android
+  if (product.category === 'iphone') image = REAL_PRODUCT_IMAGES.iphone
+  if (product.category === 'ipad') image = REAL_PRODUCT_IMAGES.ipad
+  if (product.category === 'macbook') image = REAL_PRODUCT_IMAGES.macbook
+  if (tags.includes('audifonos')) image = REAL_PRODUCT_IMAGES.earbuds
+  if (tags.includes('parlantes')) image = REAL_PRODUCT_IMAGES.speaker
+  return { ...product, image }
+})
 const campaign = campaignsData
+
+export function assetUrl(path) {
+  if (!path) return ''
+  return `${import.meta.env.BASE_URL}${String(path).replace(/^\/+/, '')}`
+}
 
 export const CATEGORIES = [
   { id: 'ofertas', label: 'Ofertas / Remates', query: { tags: 'remate,oferta' }, icon: '🔥' },
@@ -162,4 +185,27 @@ export function productSalesMessage(product) {
 
 export function productSalesWhatsApp(product) {
   return whatsappLink(WHATSAPP.ventas, productSalesMessage(product))
+}
+
+export function cartSalesMessage(items, total) {
+  const products = items.map((item) => [
+    `• ${item.name}`,
+    `  Marca: ${item.brand}`,
+    `  Cantidad: ${item.quantity}`,
+    `  Precio: ${formatCOP(item.price * item.quantity)}`
+  ].join('\n'))
+
+  return [
+    'Hola TGMOBILE COL, estoy interesado en estos productos:',
+    '',
+    ...products,
+    '',
+    `Total estimado: ${formatCOP(total)}`,
+    '',
+    '¿Podrían confirmarme disponibilidad y opciones de entrega? Gracias.'
+  ].join('\n')
+}
+
+export function cartSalesWhatsApp(items, total) {
+  return whatsappLink(WHATSAPP.ventas, cartSalesMessage(items, total))
 }

@@ -1,41 +1,23 @@
 <script setup>
-defineProps({ menuOpen: Boolean })
-defineEmits(['toggle'])
+import MacMenuBar from './MacMenuBar.vue'
 
-const links = [
-  { to: '/', label: 'Inicio' },
-  { to: '/catalogo', label: 'Catálogo' },
-  { to: '/credito', label: 'Crédito' },
-  { to: '/garantia', label: 'Garantía' },
-  { to: '/ubicacion', label: 'Ubicación' },
-  { to: '/contacto', label: 'Contacto' }
-]
+defineEmits(['open-cart'])
 </script>
 
 <template>
   <header class="site-nav">
-    <div class="container nav-inner">
-      <RouterLink to="/" class="logo" aria-label="TGMOBILE COL">
-        <img class="logo-img" src="/images/logo.png" alt="" width="40" height="40" />
-        <span class="logo-text">
-          <span class="logo-mark">TGMOBILE COL</span>
-          <span class="logo-slogan">Los mejores con los mejores</span>
-        </span>
-      </RouterLink>
+    <MacMenuBar />
 
-      <nav class="nav-links" aria-label="Principal">
-        <RouterLink v-for="l in links" :key="l.to" :to="l.to">{{ l.label }}</RouterLink>
-      </nav>
-
-      <button class="nav-toggle" type="button" aria-label="Menú" @click="$emit('toggle')">
-        {{ menuOpen ? 'Cerrar' : 'Menú' }}
-      </button>
-    </div>
-
-    <div class="mobile-menu" :class="{ open: menuOpen }">
-      <div class="container">
-        <RouterLink v-for="l in links" :key="l.to" :to="l.to">{{ l.label }}</RouterLink>
-      </div>
-    </div>
+    <nav class="ios-tab-bar" aria-label="Navegación móvil">
+      <RouterLink to="/" aria-label="Inicio"><span>⌂</span><small>Inicio</small></RouterLink>
+      <RouterLink to="/catalogo" aria-label="Catálogo"><span>⌕</span><small>Explorar</small></RouterLink>
+      <RouterLink to="/credito" aria-label="Crédito"><span>＋</span><small>Crédito</small></RouterLink>
+      <RouterLink to="/contacto" aria-label="Contacto"><span>◌</span><small>Ayuda</small></RouterLink>
+      <button type="button" aria-label="Abrir bolsa" @click="$emit('open-cart')"><span>⌁</span><small>Bolsa</small></button>
+    </nav>
   </header>
 </template>
+
+<style scoped>
+.site-nav { min-height: 0; }.ios-tab-bar { display: none; }
+</style>

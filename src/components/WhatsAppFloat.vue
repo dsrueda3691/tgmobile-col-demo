@@ -14,3 +14,7 @@ const href = whatsappLink(
     </svg>
   </a>
 </template>
+
+<style scoped>
+.float-wa { position: fixed; right: max(.75rem, env(safe-area-inset-right)); bottom: max(.75rem, env(safe-area-inset-bottom)); z-index: 80; display: grid; width: 56px; height: 56px; place-items: center; border-radius: 50%; background: var(--wa); color: #062814; box-shadow: 0 8px 28px rgba(37,211,102,.4); transition: transform .2s; }.float-wa:hover { transform: scale(1.06); }.float-wa svg { width: 28px; height: 28px; fill: currentColor; }
+</style>

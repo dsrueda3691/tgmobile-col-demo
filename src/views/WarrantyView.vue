@@ -1,6 +1,8 @@
 <script setup>
 import { whatsappLink, WHATSAPP } from '../composables/useProducts'
+import ViewHighlights from '../components/ViewHighlights.vue'
 const href = whatsappLink(WHATSAPP.postventa, 'Hola TGMOBILE COL, necesito soporte de garantía / postventa.')
+const highlights = [{ icon: '✓', value: 'Respaldo', label: 'Acompañamiento real' }, { icon: '09–16', value: 'L–V', label: 'Horario de garantía' }, { icon: '⌁', value: 'Directo', label: 'Canal postventa' }]
 </script>
 
 <template>
@@ -11,6 +13,7 @@ const href = whatsappLink(WHATSAPP.postventa, 'Hola TGMOBILE COL, necesito sopor
         <p>Atención de garantía en horario especial. Conserva tu factura y empaque cuando sea posible.</p>
       </div>
     </section>
+    <ViewHighlights :items="highlights" />
     <section class="section" style="padding-top:0">
       <div class="container info-grid">
         <div class="info-card">
@@ -47,3 +50,7 @@ const href = whatsappLink(WHATSAPP.postventa, 'Hola TGMOBILE COL, necesito sopor
     </section>
   </div>
 </template>
+
+<style scoped>
+.info-card { min-height: 13rem; }.info-card h3 { letter-spacing: -.02em; }.info-card p + p { margin-top: .2rem; }
+</style>

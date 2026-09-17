@@ -33,3 +33,8 @@ import { WHATSAPP } from '../composables/useProducts'
     </div>
   </footer>
 </template>
+
+<style scoped>
+.site-footer { margin-top: auto; padding: 2.5rem 0 2rem; overflow: hidden; border-top: 1px solid var(--border-soft); background: linear-gradient(180deg, #25282d, #0b0c0e); }.footer-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }.site-footer h4 { margin-bottom: .75rem; color: var(--text-muted); font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; }.site-footer p, .site-footer a { color: var(--text-muted); font-size: .9rem; }.footer-links { display: grid; gap: .4rem; }.footer-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border-soft); color: var(--text-dim); font-size: .8rem; }
+@media (min-width: 700px) { .footer-grid { grid-template-columns: 1.4fr 1fr 1fr; } }
+</style>

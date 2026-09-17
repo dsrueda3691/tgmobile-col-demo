@@ -1,6 +1,8 @@
 <script setup>
 import { whatsappLink, WHATSAPP } from '../composables/useProducts'
+import ViewHighlights from '../components/ViewHighlights.vue'
 const href = whatsappLink(WHATSAPP.ventas, 'Hola TGMOBILE COL, quiero información sobre crédito / financiamiento.')
+const highlights = [{ icon: '↗', value: 'Hoy', label: 'Puedes iniciar tu solicitud' }, { icon: '⌁', value: '24 h', label: 'Respuesta por WhatsApp' }, { icon: '✓', value: 'Simple', label: 'Proceso acompañado' }]
 </script>
 
 <template>
@@ -11,6 +13,7 @@ const href = whatsappLink(WHATSAPP.ventas, 'Hola TGMOBILE COL, quiero informaci�
         <p>Facilitamos la compra de tu equipo con opciones de financiamiento. Consulta disponibilidad según producto y perfil.</p>
       </div>
     </section>
+    <ViewHighlights :items="highlights" />
     <section class="section" style="padding-top:0">
       <div class="container info-grid">
         <div class="info-card">
@@ -49,3 +52,7 @@ const href = whatsappLink(WHATSAPP.ventas, 'Hola TGMOBILE COL, quiero informaci�
     </section>
   </div>
 </template>
+
+<style scoped>
+.info-card { min-height: 13rem; }.info-card h3 { letter-spacing: -.02em; }.info-card li { padding-block: .12rem; }
+</style>

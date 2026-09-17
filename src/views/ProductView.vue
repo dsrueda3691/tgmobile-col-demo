@@ -2,9 +2,12 @@
 import { computed } from 'vue'
 import { useRoute, RouterLink } from 'vue-router'
 import { useProducts, formatCOP, productSalesWhatsApp } from '../composables/useProducts'
+import ProductImage from '../components/ProductImage.vue'
+import { useCart } from '../composables/useCart'
 
 const route = useRoute()
 const { getById } = useProducts()
+const { add } = useCart()
 
 const product = computed(() => getById(route.params.id))
 
@@ -24,7 +27,7 @@ const waHref = computed(() => {
       </p>
       <div class="product-detail">
         <div class="detail-media">
-          <img :src="product.image" :alt="product.name" />
+          <ProductImage :src="product.image" :alt="product.name" loading="eager" />
         </div>
         <div class="detail-info">
           <div class="product-brand">{{ product.brand }} · {{ product.condition }}</div>
@@ -42,6 +45,7 @@ const waHref = computed(() => {
             <div v-if="product.tags?.length"><span>Tags</span><strong>{{ product.tags.join(', ') }}</strong></div>
           </div>
           <div class="hero-actions">
+            <button class="btn btn-primary" type="button" @click="add(product)">Añadir a la bolsa</button>
             <a class="btn btn-wa" :href="waHref" target="_blank" rel="noopener">Quiero comprar por WhatsApp</a>
             <RouterLink class="btn btn-ghost" to="/credito">Ver crédito</RouterLink>
           </div>
@@ -51,3 +55,8 @@ const waHref = computed(() => {
     </template>
   </div>
 </template>
+
+<style scoped>
+.product-detail { animation: product-detail-in .55s cubic-bezier(.2,.8,.2,1) both; }.detail-info { align-self: center; }.detail-media { box-shadow: 0 24px 70px rgba(0,0,0,.26); }.detail-specs { padding: .9rem 1rem; border: 1px solid var(--border); border-radius: 1rem; background: rgba(255,255,255,.04); }
+@keyframes product-detail-in { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+</style>
