@@ -1,148 +1,141 @@
-# Cómo vender la demo de TGMOBILE COL
-
-Guía práctica: mensaje de contacto, guion de reunión e **ingeniería de requisitos** clara y segura.
+# Propuesta TGMOBILE COL — Venta y requisitos
 
 **Demo:** https://dsrueda3691.github.io/tgmobile-col-demo/
 
+Documento de apoyo para presentar la demo, llegar a un acuerdo y definir requisitos (incluye **alta y baja de productos**).
+
 ---
 
-## 1. Qué estamos vendiendo (en una frase)
+## 1. Qué estamos ofreciendo
 
-> Un canal de ventas 24/7 donde el cliente ve el catálogo, elige el equipo y escribe por WhatsApp **listo para comprar** — con la imagen premium que merece la marca.
+Una **demo funcional** de tienda online (estilo iOS) pensada para TGMOBILE COL.
 
-No vendemos “una página web por tener página web”.  
-Vendemos **menos fricción en el chat** y **más confianza** antes de escribir.
+Si hay interés, se puede **llegar a un acuerdo** para construir la versión real con:
+
+- Productos, fotos y precios de la tienda
+- WhatsApp y textos oficiales
+- Proceso claro para **agregar, quitar o editar** equipos del catálogo
+
+La demo no es el producto final: es la base para conversar y cotizar con precisión.
 
 ---
 
 ## 2. Problema → solución
 
-| Problema hoy | Cómo lo ataca la página |
-|--------------|-------------------------|
-| Consultas repetidas de precio y stock | Catálogo filtrable + ficha con precio y condición |
-| Ofertas que mueren en stories | Bloques fijos: ofertas del día, remates, favoritos |
-| Marca poco “premium” en digital | UI estilo iOS, ordenada y profesional |
-| Crédito y postventa confusos | Secciones dedicadas y claras |
-| Cliente llega en frío al WhatsApp | Botón que ya lleva producto + precio en el mensaje |
+| Hoy | Con la página |
+|-----|----------------|
+| Preguntas repetidas de precio y stock | Catálogo filtrable y fichas claras |
+| Ofertas solo en stories | Ofertas y remates visibles en la home |
+| Cliente llega en frío al chat | WhatsApp con producto y precio ya escritos |
+| Imagen digital desigual | Interfaz premium, ordenada, 24/7 |
 
 ---
 
-## 3. Mensaje para contactar (Instagram o WhatsApp)
+## 3. Si hay interés: camino al acuerdo
 
-Copia, pega y cambia `[Tu nombre]`:
+1. **Ver la demo** en el celular y comentar qué cambiarían.  
+2. **Reunión de requisitos** (15–30 min) con el checklist de la sección 5.  
+3. **Propuesta de versión 1** por escrito (alcance, plazo, valor).  
+4. **Acuerdo** entre las partes (anticipo, calendario, responsabilidades).  
+5. **Entrega** con productos reales + ronda de ajustes acordada.
 
-```
-Hola, equipo TGMOBILE COL 👋
+### Qué conviene dejar por escrito
 
-Soy [Tu nombre]. Armé una demo de tienda online pensada para ustedes:
-catálogo, ofertas, crédito y compra por WhatsApp, con diseño tipo iPhone.
-
-Pueden verla aquí (funciona en el celular):
-https://dsrueda3691.github.io/tgmobile-col-demo/
-
-La idea es que el cliente elija el equipo y les escriba listo para comprar,
-con menos ida y vuelta.
-
-¿Les parece si agendamos 15 minutos esta semana para mostrársela y ver
-qué necesitarían en una versión con sus productos reales?
-```
-
-**Canales de la marca**
-
-- IG: https://instagram.com/tgmobile.col  
-- Ventas: https://wa.me/573242372232  
-- Mayoreo: https://wa.me/573246676835  
-- Postventa: https://wa.me/573005131340  
-
-**Consejo de vendedor:** manda el link **antes** de pedir reunión. Que ellos toquen la demo en el celular; eso vende solo.
+- Alcance V1 (módulos y cantidad de productos)
+- Plazo y forma de pago
+- Qué aporta TGMOBILE (fotos, precios, accesos)
+- Qué aporta el desarrollo (implementación, publicación, capacitación)
+- Ajustes incluidos vs. fase 2
 
 ---
 
-## 4. Guion de reunión (15–20 minutos)
+## 4. Catálogo vivo: agregar y eliminar productos
 
-1. **Presentación (1 min)** — Quién eres y por qué TGMOBILE.  
-2. **Demo en vivo (5 min)** — En el celular: inicio → catálogo → un producto → botón WhatsApp.  
-3. **Beneficio en una frase** — “Menos mensajes repetidos; clientes más calificados.”  
-4. **Requisitos (7 min)** — Preguntas de la sección 5; anota todo.  
-5. **Cierre (2 min)** — “Les envío resumen + cotización de la versión 1 esta semana.”
+El catálogo **no queda fijo** con los equipos de la demo. En producción se define:
 
-### Frase de elevador (30 s)
+| Acción | Qué acordar |
+|--------|-------------|
+| **Alta** | Datos mínimos: nombre, marca, categoría, condición, precio, foto, almacenamiento, batería si aplica |
+| **Baja** | ¿Se oculta o se marca agotado? ¿Quién lo decide? |
+| **Cambio de precio/stock** | Canal de solicitud y tiempo de respuesta |
+| **Volumen inicial** | Cuántos equipos en la primera carga |
+| **Responsable** | ¿Desarrollador al inicio y luego la tienda, o solo la tienda? |
 
-“Armé una demo de tienda online para TGMOBILE COL, con catálogo, ofertas y compra por WhatsApp, diseñada como una app de iPhone. El cliente ve el equipo, el precio y les escribe listo para comprar. Pueden verla ahora en el celular; si les gusta, la dejamos lista con sus productos y fotos reales.”
+Esto se cierra en la ingeniería de requisitos para evitar malentendidos.
 
 ---
 
 ## 5. Ingeniería de requisitos (checklist)
 
-Objetivo: salir de la reunión con datos para **cotizar y planear la V1**, sin prometer de más.
-
 ### A. Negocio y canales
-- [ ] ¿De dónde salen hoy la mayoría de las ventas (IG, WhatsApp, local, referidos)?
-- [ ] ¿Qué les molesta más del proceso actual de atención?
-- [ ] ¿Meta a 3 meses: más ventas online, menos tiempo en chat, o ambas?
+- [ ] Origen de la mayoría de ventas (IG, WhatsApp, local, referidos)
+- [ ] Mayor dolor en la atención actual
+- [ ] Prioridad a 90 días
 
 ### B. Catálogo y operación
-- [ ] ¿Cuántos productos activos aprox.? ¿Cada cuánto cambia el stock?
-- [ ] ¿Quién actualizará precios/disponibilidad al inicio?
-- [ ] Usados/seminuevos: ¿batería, garantía y estado cosmético obligatorios?
-- [ ] ¿Fotos propias de cada equipo o de fabricante?
+- [ ] Cantidad de productos activos y frecuencia de cambio de stock
+- [ ] Quién da de alta/baja los primeros 30 días y después
+- [ ] Usados: ¿batería, estado y garantía obligatorios?
+- [ ] Fotos: propias, fabricante o mixto
+- [ ] Productos que no deben salir online
 
 ### C. WhatsApp y ventas
-- [ ] ¿Un número o varios (ventas / mayoreo / postventa)?
-- [ ] ¿El mensaje debe incluir datos fijos (NIT, horarios, dirección)?
-- [ ] ¿Carrito multi-producto o solo consulta de un ítem a la vez?
+- [ ] Uno o varios números (ventas / mayoreo / postventa)
+- [ ] Datos fijos en el mensaje (dirección, horarios, NIT)
+- [ ] Carrito multi-ítem o consulta unitaria
 
 ### D. Crédito, envíos y postventa
-- [ ] ¿Aliados de crédito y qué debe ver el cliente en la web?
-- [ ] ¿Envíos a todo Colombia? ¿Costo fijo o cotización por chat?
-- [ ] Garantía: cobertura, días, cómo se gestiona
+- [ ] Aliados de crédito y texto en la web
+- [ ] Envíos: cobertura y tarifa
+- [ ] Garantía: cobertura y proceso
 
-### E. Marca y técnico
-- [ ] ¿Dominio propio (.com / .co) o hay que gestionarlo?
-- [ ] Logo, colores y tono de voz oficiales
-- [ ] ¿Quién aprueba textos, fotos y el go-live?
+### E. Marca y decisiones
+- [ ] Dominio propio o por gestionar
+- [ ] Logo, colores, tono
+- [ ] Quién aprueba go-live
 
-### Qué NO prometer en la primera reunión
-- Pasarela de pagos o inventario en tiempo real (solo si lo piden y se cotiza aparte)
-- App nativa en App Store / Play Store (esto es web móvil; PWA puede ser fase 2)
-- “Les garantizo X ventas en 30 días” — sí se puede hablar de mejor experiencia y menos fricción
+### Criterios de aceptación V1 (ejemplo)
+- Web pública usable en móvil con el catálogo acordado
+- Cada producto con nombre, precio, condición e imagen
+- WhatsApp abre con el texto definido
+- Altas/bajas según el proceso pactado
+- Crédito, ubicación y contacto validados por TGMOBILE
 
----
-
-## 6. Alcance sugerido para cotizar
-
-### Versión 1 (recomendada)
-- Publicación en internet (dominio o subdominio)
-- Carga de productos reales (cantidad acordada) + fotos de la tienda
-- Textos, colores y WhatsApp oficiales
-- Módulos: inicio, catálogo, producto, crédito, garantía, ubicación, contacto
-- Capacitación breve para pedir cambios de precio/stock
-
-### Fase 2 (opcional)
-- Panel para que ellos suban productos
-- Pagos en línea
-- Integración con inventario
-- SEO local y campañas
+### Fuera de alcance (salvo acuerdo aparte)
+- Pagos en línea e inventario en tiempo real
+- App nativa (App Store / Play Store)
+- Promesa de un número fijo de ventas
 
 ---
 
-## 7. Próximos pasos después de contactar
+## 6. Mensaje de primer contacto
 
-1. Enviar **link de la demo** + este documento (o el PDF de propuesta).  
-2. Agendar 15 min y completar el checklist de requisitos.  
-3. Enviar **cotización V1** con alcance, plazo y forma de pago.  
-4. Al aceptar: acuerdo simple, anticipo, desarrollo con datos reales.
+```
+Hola, equipo TGMOBILE COL 👋
+
+Soy [Tu nombre]. Preparé una demo de tienda online para ustedes:
+catálogo, ofertas, crédito y compra por WhatsApp, con diseño tipo iPhone.
+
+Pueden verla aquí (celular):
+https://dsrueda3691.github.io/tgmobile-col-demo/
+
+Si les interesa, podemos reunirnos 15–20 minutos, definir requisitos
+(incluido cómo agregar o quitar productos) y, si hay acuerdo, armar
+la versión real con su catálogo.
+
+¿Les funciona esta semana?
+```
 
 ---
 
-## 8. Argumentos según quién escuche
+## 7. Guion de reunión (15–20 min)
 
-| Persona | Mensaje |
-|---------|---------|
-| Dueño / gerencia | Más ventas con el mismo equipo; imagen al nivel del producto |
-| Quien atiende WhatsApp | Menos preguntas repetidas; mensajes prearmados |
-| Quien lleva redes | Link en bio que convierte; ofertas que no caducan en 24 h |
+1. Presentación (1 min)  
+2. Demo en vivo en el celular (5 min)  
+3. Beneficio en una frase (1 min)  
+4. Requisitos + altas/bajas de catálogo (8 min)  
+5. Cierre: envío de propuesta V1 (2 min)
 
 ---
 
-*Documento de apoyo comercial para la demo TGMOBILE COL. Precios de la demo son ilustrativos.*
+*Precios de la demo son de ejemplo. El desarrollo a producción queda sujeto a acuerdo entre las partes.*
