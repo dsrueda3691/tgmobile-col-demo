@@ -2,25 +2,36 @@ import { computed } from 'vue'
 import productsData from '../data/products.json'
 import campaignsData from '../data/campaigns.json'
 
-const REAL_PRODUCT_IMAGES = {
+/** Fallback solo si el producto no trae imagen propia */
+const FALLBACK_IMAGES = {
   iphone: '/images/real/smartphone-iphone.jpg',
-  android: '/images/real/smartphone-android.jpg',
+  'otras-marcas': '/images/real/smartphone-android.jpg',
+  'usados-seminuevos': '/images/real/smartphone-android.jpg',
   ipad: '/images/real/tablet-ipad.jpg',
   macbook: '/images/real/laptop-macbook.jpg',
-  earbuds: '/images/real/earbuds.jpg',
-  speaker: '/images/real/speaker.jpg'
+  accesorios: '/images/real/earbuds.jpg',
+  audifonos: '/images/real/earbuds.jpg',
+  parlantes: '/images/real/speaker.jpg'
 }
 
-const products = productsData.map((product) => {
+function resolveImage(product) {
+  // Prioridad 1: imagen específica del producto (products.json)
+  if (product.image && String(product.image).trim()) {
+    return product.image
+  }
+  // Prioridad 2: por tags de accesorios
   const tags = product.tags || []
-  let image = REAL_PRODUCT_IMAGES.android
-  if (product.category === 'iphone') image = REAL_PRODUCT_IMAGES.iphone
-  if (product.category === 'ipad') image = REAL_PRODUCT_IMAGES.ipad
-  if (product.category === 'macbook') image = REAL_PRODUCT_IMAGES.macbook
-  if (tags.includes('audifonos')) image = REAL_PRODUCT_IMAGES.earbuds
-  if (tags.includes('parlantes')) image = REAL_PRODUCT_IMAGES.speaker
-  return { ...product, image }
-})
+  if (tags.includes('audifonos')) return FALLBACK_IMAGES.audifonos
+  if (tags.includes('parlantes')) return FALLBACK_IMAGES.parlantes
+  // Prioridad 3: por categoría
+  if (FALLBACK_IMAGES[product.category]) return FALLBACK_IMAGES[product.category]
+  return '/images/logo.png'
+}
+
+const products = productsData.map((product) => ({
+  ...product,
+  image: resolveImage(product)
+}))
 const campaign = campaignsData
 
 export function assetUrl(path) {
@@ -90,7 +101,6 @@ export function useProducts() {
       if (cats.length) {
         list = list.filter((p) => {
           if (cats.includes(p.category)) return true
-          // usados-seminuevos also matches condition
           if (cats.includes('usados-seminuevos') && ['usado', 'seminuevo'].includes(p.condition)) return true
           return false
         })
@@ -177,7 +187,7 @@ export function productSalesMessage(product) {
   return [
     'Hola TGMOBILE COL, quiero comprar este producto:',
     '',
-    ...parts.map((p, i) => (i === 0 ? `• ${p}` : `• ${p}`)),
+    ...parts.map((p) => `• ${p}`),
     '',
     '¿Está disponible? Gracias.'
   ].join('\n')
@@ -188,17 +198,19 @@ export function productSalesWhatsApp(product) {
 }
 
 export function cartSalesMessage(items, total) {
-  const products = items.map((item) => [
-    `• ${item.name}`,
-    `  Marca: ${item.brand}`,
-    `  Cantidad: ${item.quantity}`,
-    `  Precio: ${formatCOP(item.price * item.quantity)}`
-  ].join('\n'))
+  const lines = items.map((item) =>
+    [
+      `• ${item.name}`,
+      `  Marca: ${item.brand}`,
+      `  Cantidad: ${item.quantity}`,
+      `  Precio: ${formatCOP(item.price * item.quantity)}`
+    ].join('\n')
+  )
 
   return [
     'Hola TGMOBILE COL, estoy interesado en estos productos:',
     '',
-    ...products,
+    ...lines,
     '',
     `Total estimado: ${formatCOP(total)}`,
     '',
