@@ -237,14 +237,86 @@ const dealTag = (p) => {
   border-top: 1px solid rgba(255, 255, 255, 0.045);
 }
 
-/* Categories: keep dark iOS surface */
+/* Announcement — dark iOS (overrides global light theme) */
+.announcement-section {
+  background: transparent !important;
+  color: var(--text) !important;
+}
+.announcement-grid {
+  display: grid;
+  gap: 2rem;
+  align-items: start;
+}
+@media (min-width: 900px) {
+  .announcement-grid {
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 3.5rem;
+    align-items: center;
+  }
+}
+.announcement-copy .section-kicker {
+  color: var(--text-dim) !important;
+}
+.announcement-copy h2 {
+  margin: 0.55rem 0 0.9rem;
+  font-size: clamp(1.85rem, 4.5vw, 3.2rem);
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  color: var(--text);
+}
+.announcement-copy h2 em {
+  font-style: normal;
+  color: rgba(242, 243, 245, 0.45);
+}
+.announcement-copy p {
+  max-width: 28rem;
+  color: var(--text-muted) !important;
+  margin-bottom: 1.25rem;
+  line-height: 1.55;
+}
+.announcement-copy .text-link {
+  color: var(--text) !important;
+  font-size: 0.85rem;
+  font-weight: 650;
+}
+.announcement-list article {
+  display: grid;
+  grid-template-columns: 2.25rem 1fr auto;
+  align-items: start;
+  gap: 0.85rem;
+  padding: 1.15rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+.announcement-list article:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+.announcement-number {
+  color: var(--warning) !important;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding-top: 0.2rem;
+}
+.announcement-list strong {
+  font-size: 1rem;
+  color: var(--text);
+}
+.announcement-list p {
+  color: var(--text-muted) !important;
+  font-size: 0.82rem;
+  margin-top: 0.2rem;
+  line-height: 1.4;
+}
+.announcement-arrow {
+  color: rgba(242, 243, 245, 0.35) !important;
+}
+
 .categories-section {
   background: transparent;
 }
 
-/* New arrivals — horizontal iOS-style cards */
+/* New arrivals — horizontal iOS cards */
 .new-arrivals-section {
-  background: linear-gradient(180deg, rgba(20, 22, 26, 0.55), transparent);
+  background: linear-gradient(180deg, rgba(20, 22, 26, 0.65), transparent) !important;
   padding-bottom: 2.5rem;
 }
 .arrivals-head {
@@ -267,17 +339,19 @@ const dealTag = (p) => {
 .arrival-card {
   scroll-snap-align: start;
   flex: 0 0 min(78vw, 280px);
-  display: flex;
+  display: flex !important;
   flex-direction: column;
+  grid-template-columns: none !important;
   gap: 0.75rem;
-  padding: 0.85rem;
+  padding: 0.85rem !important;
   border-radius: 1.25rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.05) !important;
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   text-decoration: none;
   color: inherit;
+  overflow: hidden;
   transition:
     transform 0.4s cubic-bezier(0.32, 0.72, 0, 1),
     background 0.25s ease,
@@ -290,7 +364,7 @@ const dealTag = (p) => {
 }
 .arrival-card:hover {
   transform: translateY(-4px);
-  background: rgba(255, 255, 255, 0.09);
+  background: rgba(255, 255, 255, 0.09) !important;
   border-color: rgba(255, 255, 255, 0.14);
 }
 
@@ -327,6 +401,7 @@ const dealTag = (p) => {
   gap: 0.2rem;
   min-width: 0;
   padding: 0 0.15rem 0.15rem;
+  grid-column: auto !important;
 }
 .arrival-body small {
   color: rgba(242, 243, 245, 0.5);
@@ -359,17 +434,6 @@ const dealTag = (p) => {
   to {
     opacity: 1;
     transform: none;
-  }
-}
-
-@keyframes home-section-in {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 
@@ -412,8 +476,7 @@ const dealTag = (p) => {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .arrival-card,
-  .cat-card {
+  .arrival-card {
     animation: none;
   }
 }
