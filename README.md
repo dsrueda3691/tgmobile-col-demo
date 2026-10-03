@@ -72,11 +72,7 @@ npm run preview
 
 ---
 
-## Documentación comercial
 
-- **[Guía de venta y requisitos](./docs/VENTA_Y_REQUISITOS.md)** — cómo presentar la demo, mensaje de contacto e ingeniería de requisitos.
-
----
 
 ## Contacto de la marca (referencia)
 
