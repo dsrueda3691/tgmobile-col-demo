@@ -14,5 +14,61 @@ defineEmits(['open-cart', 'open-more'])
 </template>
 
 <style scoped>
-.mobile-dock { position: fixed; left: .75rem; right: .75rem; bottom: max(.65rem, env(safe-area-inset-bottom)); z-index: 9999; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); padding: .45rem .35rem .35rem; border: 1px solid rgba(255,255,255,.13); border-radius: 1.35rem; background: rgba(23,25,29,.82); box-shadow: 0 12px 36px rgba(0,0,0,.42), inset 0 1px 0 rgba(255,255,255,.08); backdrop-filter: blur(22px) saturate(140%); -webkit-backdrop-filter: blur(22px) saturate(140%); transition: transform .42s cubic-bezier(.175,.885,.32,1.275), opacity .28s ease; }.mobile-dock a, .mobile-dock button { display: grid; justify-items: center; gap: .1rem; min-height: 2.8rem; padding: .25rem .2rem; border: 0; border-radius: .85rem; background: transparent; color: #8e959e; font: inherit; cursor: pointer; transition: color .25s, background .25s, transform .25s; }.mobile-dock span { font-size: 1.22rem; line-height: 1; }.mobile-dock small { font-size: .58rem; font-weight: 600; }.mobile-dock a.router-link-active, .mobile-dock button:hover { color: #f5f6f7; background: rgba(255,255,255,.1); transform: translateY(-2px); }
+.mobile-dock {
+  position: fixed;
+  left: 0.75rem;
+  right: 0.75rem;
+  bottom: max(0.65rem, env(safe-area-inset-bottom));
+  z-index: 9999;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  padding: 0.45rem 0.35rem 0.35rem;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 1.35rem;
+  background: rgba(23, 25, 29, 0.82);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.42), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(22px) saturate(140%);
+  -webkit-backdrop-filter: blur(22px) saturate(140%);
+  transition: transform 0.42s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.28s ease;
+}
+
+.mobile-dock a,
+.mobile-dock button {
+  display: grid;
+  justify-items: center;
+  gap: 0.1rem;
+  min-height: 2.8rem;
+  padding: 0.25rem 0.2rem;
+  border: 0;
+  border-radius: 0.85rem;
+  background: transparent;
+  color: #8e959e;
+  font: inherit;
+  cursor: pointer;
+  transition: color 0.25s, background 0.25s, transform 0.25s;
+}
+
+.mobile-dock span {
+  font-size: 1.22rem;
+  line-height: 1;
+}
+
+.mobile-dock small {
+  font-size: 0.58rem;
+  font-weight: 600;
+}
+
+.mobile-dock a.router-link-active,
+.mobile-dock button:hover {
+  color: #f5f6f7;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* En escritorio solo se usa el dock Mac */
+@media (min-width: 900px) {
+  .mobile-dock {
+    display: none !important;
+  }
+}
 </style>
