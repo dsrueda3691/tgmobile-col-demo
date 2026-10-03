@@ -43,15 +43,16 @@ function handleError(event) {
   height: 100%;
   min-width: 0;
   min-height: 0;
-  background: linear-gradient(160deg, #3a3f46 0%, #2a2e34 100%);
+  /* Fondo estilo catálogo (blanco limpio como Falabella) */
+  background: #f5f6f7;
   border-radius: 1rem;
   overflow: hidden;
 }
 
 .smart-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 88%;
+  height: 88%;
+  object-fit: contain;
   object-position: center;
   opacity: 0;
   transition:
@@ -69,19 +70,20 @@ function handleError(event) {
 
 .image-skeleton {
   position: absolute;
-  inset: 0;
+  inset: 12%;
+  border-radius: 12px;
   background: linear-gradient(
     105deg,
-    rgba(255, 255, 255, 0.03) 25%,
-    rgba(255, 255, 255, 0.1) 40%,
-    rgba(255, 255, 255, 0.03) 55%
+    rgba(0, 0, 0, 0.03) 25%,
+    rgba(0, 0, 0, 0.07) 40%,
+    rgba(0, 0, 0, 0.03) 55%
   );
   background-size: 220% 100%;
   animation: skeleton-pulse 1.5s linear infinite;
 }
 
 .smart-image.has-error img {
-  opacity: 0.65;
+  opacity: 0.55;
   object-fit: contain;
   padding: 1.5rem;
 }
