@@ -4,9 +4,20 @@ import { useProducts } from '../composables/useProducts'
 
 const { categories, filterProducts } = useProducts()
 
+const shortLabels = {
+  ofertas: 'Ofertas',
+  iphone: 'iPhone',
+  'otras-marcas': 'Android',
+  'usados-seminuevos': 'Seminuevos',
+  ipad: 'iPad',
+  macbook: 'MacBook',
+  accesorios: 'Accesorios'
+}
+
 const items = computed(() =>
   categories.map((c) => ({
     ...c,
+    short: shortLabels[c.id] || c.label,
     count: filterProducts(c.query).length
   }))
 )
@@ -23,7 +34,7 @@ const items = computed(() =>
     >
       <div class="cat-icon" aria-hidden="true">{{ c.icon }}</div>
       <div class="cat-body">
-        <h3>{{ c.label }}</h3>
+        <h3>{{ c.short }}</h3>
         <span>{{ c.count }} producto{{ c.count === 1 ? '' : 's' }}</span>
       </div>
       <span class="cat-arrow" aria-hidden="true">›</span>
@@ -43,12 +54,12 @@ const items = computed(() =>
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  gap: 0.75rem;
-  min-height: 4.5rem;
-  padding: 0.95rem 0.9rem;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  gap: 0.7rem;
+  min-height: 4.4rem;
+  padding: 0.9rem 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.09);
   border-radius: 1.15rem;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.07);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
@@ -70,7 +81,7 @@ const items = computed(() =>
 
 .cat-card:hover {
   transform: translateY(-3px);
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.11);
   border-color: rgba(255, 255, 255, 0.16);
   box-shadow: 0 14px 32px rgba(0, 0, 0, 0.28);
 }
@@ -78,34 +89,32 @@ const items = computed(() =>
 .cat-icon {
   display: grid;
   place-items: center;
-  width: 2.6rem;
-  height: 2.6rem;
+  width: 2.55rem;
+  height: 2.55rem;
   border-radius: 0.85rem;
   background: rgba(255, 255, 255, 0.1);
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   flex-shrink: 0;
 }
 
 .cat-body {
   min-width: 0;
   display: grid;
-  gap: 0.15rem;
+  gap: 0.12rem;
 }
 
 .cat-body h3 {
   margin: 0;
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   font-weight: 650;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.015em;
   color: #f5f6f7;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  line-height: 1.2;
 }
 
 .cat-body span {
-  font-size: 0.72rem;
-  color: rgba(242, 243, 245, 0.55);
+  font-size: 0.7rem;
+  color: rgba(242, 243, 245, 0.52);
 }
 
 .cat-arrow {
@@ -145,6 +154,12 @@ const items = computed(() =>
   .cat-card {
     min-height: 5rem;
     padding: 1.1rem 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cat-card {
+    animation: none;
   }
 }
 </style>
