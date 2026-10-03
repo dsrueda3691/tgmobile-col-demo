@@ -237,7 +237,6 @@ const dealTag = (p) => {
   border-top: 1px solid rgba(255, 255, 255, 0.045);
 }
 
-/* Announcement — dark iOS (overrides global light theme) */
 .announcement-section {
   background: transparent !important;
   color: var(--text) !important;
@@ -314,7 +313,6 @@ const dealTag = (p) => {
   background: transparent;
 }
 
-/* New arrivals — horizontal iOS cards */
 .new-arrivals-section {
   background: linear-gradient(180deg, rgba(20, 22, 26, 0.65), transparent) !important;
   padding-bottom: 2.5rem;
@@ -377,10 +375,13 @@ const dealTag = (p) => {
 
 .arrival-media {
   position: relative;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1;
   border-radius: 0.9rem;
   overflow: hidden;
   background: linear-gradient(160deg, #3a3f46, #2a2e34);
+  display: grid;
+  place-items: center;
+  padding: 0.75rem;
 }
 .arrival-media :deep(.smart-image) {
   width: 100%;
@@ -389,7 +390,7 @@ const dealTag = (p) => {
 .arrival-media :deep(.smart-image img) {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 0;
 }
 .arrival-media :deep(.image-corner) {
