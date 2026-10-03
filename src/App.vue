@@ -5,6 +5,7 @@ import CartSheet from './components/CartSheet.vue'
 import DynamicIsland from './components/DynamicIsland.vue'
 import DesktopNotice from './components/DesktopNotice.vue'
 import MacMenuBar from './components/MacMenuBar.vue'
+import MacDock from './components/MacDock.vue'
 import MobileDock from './components/MobileDock.vue'
 import MobileMoreSheet from './components/MobileMoreSheet.vue'
 import ScrollProgress from './components/ScrollProgress.vue'
@@ -36,6 +37,7 @@ function showMore() {
     <DemoBanner />
     <MacMenuBar />
     <MobileDock @open-cart="showCart" @open-more="showMore" />
+    <MacDock @open-cart="showCart" />
     <main>
       <RouterView v-slot="{ Component }">
         <Transition name="page" mode="out-in">
