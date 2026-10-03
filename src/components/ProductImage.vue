@@ -22,8 +22,6 @@ function handleError(event) {
 <template>
   <div class="smart-image" :class="{ 'is-loaded': isLoaded, 'has-error': hasError }">
     <div v-if="!isLoaded" class="image-skeleton" aria-hidden="true"></div>
-    <span class="image-corner image-corner-tl" aria-hidden="true"></span>
-    <span class="image-corner image-corner-br" aria-hidden="true"></span>
     <img
       :src="assetUrl(src)"
       :alt="alt"
@@ -35,6 +33,79 @@ function handleError(event) {
 </template>
 
 <style scoped>
-.smart-image { position: relative; display: grid; place-items: center; width: 100%; height: 100%; min-width: 0; min-height: 0; }.smart-image img { max-width: 100%; max-height: 100%; opacity: 0; transition: opacity .45s ease, transform .45s ease; }.smart-image.is-loaded img { opacity: 1; }.smart-image:hover img { transform: scale(1.035); }.image-skeleton { position: absolute; inset: 10%; border-radius: 12px; background: linear-gradient(105deg, rgba(255,255,255,.03) 25%, rgba(255,255,255,.11) 40%, rgba(255,255,255,.03) 55%); background-size: 220% 100%; animation: skeleton-pulse 1.5s linear infinite; }.smart-image.has-error img { opacity: .65; }.image-corner { position: absolute; z-index: 2; width: 1rem; height: 1rem; border-color: rgba(255,255,255,.45); opacity: .65; transition: width .3s ease, height .3s ease, opacity .3s ease; pointer-events: none; }.image-corner-tl { top: .7rem; left: .7rem; border-top: 1px solid; border-left: 1px solid; }.image-corner-br { right: .7rem; bottom: .7rem; border-right: 1px solid; border-bottom: 1px solid; }.smart-image:hover .image-corner { width: 1.35rem; height: 1.35rem; opacity: 1; }
-@keyframes skeleton-pulse { from { background-position: 200% 0; } to { background-position: -20% 0; } }
+.smart-image {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  /* Fondo oscuro iOS detrás de ilustraciones con fondo blanco */
+  background:
+    radial-gradient(ellipse at 50% 40%, rgba(90, 96, 110, 0.35), transparent 65%),
+    linear-gradient(160deg, #3a3f46 0%, #2a2e34 100%);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.smart-image img {
+  max-width: 88%;
+  max-height: 88%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  opacity: 0;
+  /* Quita el “cuadro blanco” de las ilustraciones sobre fondo oscuro */
+  mix-blend-mode: multiply;
+  filter: contrast(1.05) saturate(1.05);
+  transition:
+    opacity 0.45s ease,
+    transform 0.45s cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+.smart-image.is-loaded img {
+  opacity: 1;
+}
+
+.smart-image:hover img {
+  transform: scale(1.04);
+}
+
+.image-skeleton {
+  position: absolute;
+  inset: 12%;
+  border-radius: 12px;
+  background: linear-gradient(
+    105deg,
+    rgba(255, 255, 255, 0.03) 25%,
+    rgba(255, 255, 255, 0.1) 40%,
+    rgba(255, 255, 255, 0.03) 55%
+  );
+  background-size: 220% 100%;
+  animation: skeleton-pulse 1.5s linear infinite;
+}
+
+.smart-image.has-error img {
+  opacity: 0.65;
+  mix-blend-mode: normal;
+}
+
+@keyframes skeleton-pulse {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -20% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .smart-image img {
+    transition: opacity 0.3s ease;
+  }
+  .smart-image:hover img {
+    transform: none;
+  }
+}
 </style>
