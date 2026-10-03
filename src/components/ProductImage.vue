@@ -26,6 +26,8 @@ function handleError(event) {
       :src="assetUrl(src)"
       :alt="alt"
       :loading="loading"
+      decoding="async"
+      referrerpolicy="no-referrer"
       @load="isLoaded = true"
       @error="handleError"
     />
@@ -41,24 +43,17 @@ function handleError(event) {
   height: 100%;
   min-width: 0;
   min-height: 0;
-  /* Fondo oscuro iOS detrás de ilustraciones con fondo blanco */
-  background:
-    radial-gradient(ellipse at 50% 40%, rgba(90, 96, 110, 0.35), transparent 65%),
-    linear-gradient(160deg, #3a3f46 0%, #2a2e34 100%);
+  background: linear-gradient(160deg, #3a3f46 0%, #2a2e34 100%);
   border-radius: 1rem;
   overflow: hidden;
 }
 
 .smart-image img {
-  max-width: 88%;
-  max-height: 88%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
   opacity: 0;
-  /* Quita el “cuadro blanco” de las ilustraciones sobre fondo oscuro */
-  mix-blend-mode: multiply;
-  filter: contrast(1.05) saturate(1.05);
   transition:
     opacity 0.45s ease,
     transform 0.45s cubic-bezier(0.32, 0.72, 0, 1);
@@ -74,8 +69,7 @@ function handleError(event) {
 
 .image-skeleton {
   position: absolute;
-  inset: 12%;
-  border-radius: 12px;
+  inset: 0;
   background: linear-gradient(
     105deg,
     rgba(255, 255, 255, 0.03) 25%,
@@ -88,7 +82,8 @@ function handleError(event) {
 
 .smart-image.has-error img {
   opacity: 0.65;
-  mix-blend-mode: normal;
+  object-fit: contain;
+  padding: 1.5rem;
 }
 
 @keyframes skeleton-pulse {

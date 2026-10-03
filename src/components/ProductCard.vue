@@ -61,6 +61,87 @@ const badges = computed(() => {
 </template>
 
 <style scoped>
-.product-card { transform-style: preserve-3d; perspective: 900px; transition: transform .45s cubic-bezier(.2,.8,.2,1), border-color .3s, box-shadow .45s; }.product-card:hover { transform: translateY(-8px) rotateX(1deg); }.product-card.launching { position: relative; z-index: 20; animation: springboard-launch .42s cubic-bezier(.175,.885,.32,1.275) forwards; }.product-media { transform: translateZ(1px); }.btn-add { background: rgba(245,246,247,.1); border-color: rgba(245,246,247,.22); }.btn-add:hover { background: #f5f6f7; color: #111316; }.product-card.launching .product-media { border-radius: 1.6rem; }.product-card.launching ~ * { opacity: .25; transition: opacity .22s ease; }
-@keyframes springboard-launch { 0% { transform: scale(1) translateZ(0); filter: brightness(1); } 38% { transform: scale(1.045) translateZ(30px); filter: brightness(1.15); } 100% { transform: scale(1.16) translateZ(70px); filter: brightness(1.3); opacity: .3; } }
+.product-card {
+  transform-style: preserve-3d;
+  perspective: 900px;
+  transition: transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.3s, box-shadow 0.45s;
+}
+.product-card:hover {
+  transform: translateY(-8px) rotateX(1deg);
+}
+.product-card.launching {
+  position: relative;
+  z-index: 20;
+  animation: springboard-launch 0.42s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+.product-media {
+  position: relative;
+  transform: translateZ(1px);
+  overflow: hidden;
+}
+.product-badges {
+  position: absolute;
+  top: 0.65rem;
+  left: 0.65rem;
+  right: 0.65rem;
+  z-index: 5;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  pointer-events: none;
+}
+.badge {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.28rem 0.5rem;
+  border-radius: 999px;
+  background: rgba(20, 22, 26, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--text);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.badge-oferta {
+  background: rgba(240, 180, 41, 0.92);
+  color: #1a1408;
+  border-color: transparent;
+}
+.badge-nuevo {
+  background: rgba(52, 211, 153, 0.92);
+  color: #062814;
+  border-color: transparent;
+}
+.badge-usado,
+.badge-seminuevo {
+  background: rgba(30, 34, 40, 0.88);
+  color: #c5cad0;
+}
+.btn-add {
+  background: rgba(245, 246, 247, 0.1);
+  border-color: rgba(245, 246, 247, 0.22);
+}
+.btn-add:hover {
+  background: #f5f6f7;
+  color: #111316;
+}
+.product-card.launching .product-media {
+  border-radius: 1.6rem;
+}
+@keyframes springboard-launch {
+  0% {
+    transform: scale(1) translateZ(0);
+    filter: brightness(1);
+  }
+  38% {
+    transform: scale(1.045) translateZ(30px);
+    filter: brightness(1.15);
+  }
+  100% {
+    transform: scale(1.16) translateZ(70px);
+    filter: brightness(1.3);
+    opacity: 0.3;
+  }
+}
 </style>

@@ -8,13 +8,9 @@
     "price": 4899000,
     "compareAtPrice": 5299000,
     "storage": "256GB",
-    "image": "/images/products/iphone-15-pro.png",
+    "image": "https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
     "featured": true,
-    "tags": [
-      "oferta",
-      "destacado",
-      "oferta-dia"
-    ],
+    "tags": ["oferta", "destacado", "oferta-dia"],
     "season": "remate",
     "inStock": true,
     "description": "Titanio, chip A17 Pro, cámara de 48 MP. Excelente desempeño."
@@ -28,11 +24,9 @@
     "price": 3599000,
     "compareAtPrice": 3899000,
     "storage": "128GB",
-    "image": "/images/products/iphone-15.png",
+    "image": "https://images.unsplash.com/photo-1678685888221-cda773a3dcdb?auto=format&fit=crop&w=800&h=800&q=80",
     "featured": true,
-    "tags": [
-      "oferta"
-    ],
+    "tags": ["oferta"],
     "inStock": true,
     "description": "Dynamic Island, USB-C y cámara de 48 MP."
   },
@@ -46,12 +40,9 @@
     "compareAtPrice": 3199000,
     "storage": "128GB",
     "batteryPercent": 92,
-    "image": "/images/products/iphone-14-pro.png",
+    "image": "https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
     "featured": true,
-    "tags": [
-      "seminuevo",
-      "oferta"
-    ],
+    "tags": ["seminuevo", "oferta"],
     "inStock": true,
     "description": "Always-On Display, ProMotion 120 Hz. Batería al 92%."
   },
@@ -64,11 +55,9 @@
     "price": 1999000,
     "storage": "128GB",
     "batteryPercent": 88,
-    "image": "/images/products/iphone-13.png",
+    "image": "https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
     "featured": false,
-    "tags": [
-      "seminuevo"
-    ],
+    "tags": ["seminuevo"],
     "inStock": true,
     "description": "A15 Bionic, doble cámara, 5G. Estado impecable."
   },
@@ -81,11 +70,9 @@
     "price": 1299000,
     "storage": "64GB",
     "batteryPercent": 84,
-    "image": "/images/products/iphone-12.png",
+    "image": "https://images.unsplash.com/photo-1603891128711-11b4b03bb138?auto=format&fit=crop&w=800&h=800&q=80",
     "featured": false,
-    "tags": [
-      "usado"
-    ],
+    "tags": ["usado"],
     "inStock": true,
     "description": "Diseño Ceramic Shield, 5G. Ideal para uso diario."
   },
@@ -98,13 +85,9 @@
     "price": 899000,
     "storage": "64GB",
     "batteryPercent": 86,
-    "image": "/images/products/iphone-11.png",
+    "image": "https://images.pexels.com/photos/47261/pexels-photo-47261.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
     "featured": false,
-    "tags": [
-      "usado",
-      "remate",
-      "oferta-dia"
-    ],
+    "tags": ["usado", "remate", "oferta-dia"],
     "season": "remate",
     "inStock": true,
     "description": "Doble cámara, gran autonomía. Precio remate."
@@ -118,12 +101,9 @@
     "price": 6299000,
     "compareAtPrice": 6599000,
     "storage": "256GB",
-    "image": "/images/products/iphone-16-pro-max.png",
+    "image": "https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
     "featured": true,
-    "tags": [
-      "nuevo",
-      "destacado"
-    ],
+    "tags": ["nuevo", "destacado"],
     "inStock": true,
     "description": "Lo último de Apple. Cámara Fusion y botón de Control de Cámara."
   },
@@ -136,13 +116,9 @@
     "price": 2999000,
     "compareAtPrice": 3299000,
     "storage": "256GB",
-    "image": "/images/products/samsung-s24.png",
+    "image": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=800&h=800&q=80",
     "featured": true,
-    "tags": [
-      "oferta",
-      "android",
-      "oferta-dia"
-    ],
+    "tags": ["oferta", "android", "oferta-dia"],
     "inStock": true,
     "description": "Galaxy AI, pantalla Dynamic AMOLED 2X."
   },
@@ -154,11 +130,9 @@
     "condition": "nuevo",
     "price": 1299000,
     "storage": "128GB",
-    "image": "/images/products/samsung-a55.png",
+    "image": "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
     "featured": false,
-    "tags": [
-      "android"
-    ],
+    "tags": ["android"],
     "inStock": true,
     "description": "Gama media premium con IP67 y gran batería."
   },
@@ -171,12 +145,9 @@
     "price": 1699000,
     "compareAtPrice": 1899000,
     "storage": "256GB",
-    "image": "/images/products/xiaomi-14t.png",
+    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&h=800&q=80",
     "featured": true,
-    "tags": [
-      "oferta",
-      "android"
-    ],
+    "tags": ["oferta", "android"],
     "season": "remate",
     "inStock": true,
     "description": "Leica optics, carga rápida 67W."
@@ -189,11 +160,9 @@
     "condition": "nuevo",
     "price": 1199000,
     "storage": "256GB",
-    "image": "/images/products/moto-edge50.png",
+    "image": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=800&h=800&q=80",
     "featured": false,
-    "tags": [
-      "android"
-    ],
+    "tags": ["android"],
     "inStock": true,
     "description": "Pantalla pOLED curva, IP68 y estilo premium."
   },
@@ -205,11 +174,9 @@
     "condition": "nuevo",
     "price": 1499000,
     "storage": "256GB",
-    "image": "/images/products/oppo-reno12.png",
+    "image": "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?auto=format&fit=crop&w=800&h=800&q=80",
     "featured": false,
-    "tags": [
-      "android"
-    ],
+    "tags": ["android"],
     "inStock": true,
     "description": "Diseño delgado, IA fotográfica y carga SuperVOOC."
   },
@@ -223,12 +190,9 @@
     "compareAtPrice": 2799000,
     "storage": "256GB",
     "batteryPercent": 91,
-    "image": "/images/products/samsung-s23u.png",
+    "image": "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?auto=format&fit=crop&w=800&h=800&q=80",
     "featured": true,
-    "tags": [
-      "seminuevo",
-      "oferta"
-    ],
+    "tags": ["seminuevo", "oferta"],
     "inStock": true,
     "description": "S Pen incluido, 200 MP. Casi nuevo."
   },
@@ -241,13 +205,9 @@
     "price": 799000,
     "storage": "256GB",
     "batteryPercent": 89,
-    "image": "/images/products/redmi-note13.png",
+    "image": "https://images.unsplash.com/photo-1585060544812-6b45742d762f?auto=format&fit=crop&w=800&h=800&q=80",
     "featured": false,
-    "tags": [
-      "usado",
-      "remate",
-      "oferta-dia"
-    ],
+    "tags": ["usado", "remate", "oferta-dia"],
     "season": "remate",
     "inStock": true,
     "description": "Gran batería y cámara de 200 MP a precio remate."
@@ -261,12 +221,9 @@
     "price": 2899000,
     "compareAtPrice": 3099000,
     "storage": "128GB",
-    "image": "/images/products/ipad-air.png",
+    "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&h=800&q=80",
     "featured": true,
-    "tags": [
-      "oferta",
-      "ipad"
-    ],
+    "tags": ["oferta", "ipad"],
     "inStock": true,
     "description": "Chip M2, Liquid Retina de 11\". Ideal estudio y creativos."
   },
@@ -278,11 +235,9 @@
     "condition": "nuevo",
     "price": 1699000,
     "storage": "64GB",
-    "image": "/images/products/ipad-10.png",
+    "image": "https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?auto=format&fit=crop&w=800&h=800&q=80",
     "featured": false,
-    "tags": [
-      "ipad"
-    ],
+    "tags": ["ipad"],
     "inStock": true,
     "description": "USB-C, chip A14. Perfecto para clases y entretenimiento."
   },
@@ -295,12 +250,9 @@
     "price": 2299000,
     "storage": "128GB",
     "batteryPercent": 90,
-    "image": "/images/products/ipad-pro.png",
+    "image": "https://images.unsplash.com/photo-1542751110-97427bbecf20?auto=format&fit=crop&w=800&h=800&q=80",
     "featured": false,
-    "tags": [
-      "seminuevo",
-      "ipad"
-    ],
+    "tags": ["seminuevo", "ipad"],
     "inStock": true,
     "description": "ProMotion 120 Hz, Face ID. Estado excelente."
   },
@@ -313,13 +265,9 @@
     "price": 4999000,
     "compareAtPrice": 5399000,
     "storage": "256GB",
-    "image": "/images/products/macbook-air-m3.png",
+    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&h=800&q=80",
     "featured": true,
-    "tags": [
-      "oferta",
-      "macbook",
-      "destacado"
-    ],
+    "tags": ["oferta", "macbook", "destacado"],
     "inStock": true,
     "description": "Silencioso, hasta 18 h de batería. Productividad total."
   },
@@ -332,12 +280,9 @@
     "price": 3899000,
     "storage": "256GB",
     "batteryPercent": 93,
-    "image": "/images/products/macbook-air-m2.png",
+    "image": "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=800&h=800&q=80",
     "featured": true,
-    "tags": [
-      "seminuevo",
-      "macbook"
-    ],
+    "tags": ["seminuevo", "macbook"],
     "inStock": true,
     "description": "Diseño delgado, chip M2. Casi sin uso."
   },
@@ -349,11 +294,9 @@
     "condition": "nuevo",
     "price": 7999000,
     "storage": "512GB",
-    "image": "/images/products/macbook-pro.png",
+    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=800&h=800&q=80",
     "featured": false,
-    "tags": [
-      "macbook"
-    ],
+    "tags": ["macbook"],
     "inStock": true,
     "description": "Liquid Retina XDR, pro para edición y desarrollo."
   },
@@ -365,12 +308,9 @@
     "condition": "nuevo",
     "price": 119000,
     "compareAtPrice": 149000,
-    "image": "/images/products/charger-20w.png",
+    "image": "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=800&h=800&q=80",
     "featured": false,
-    "tags": [
-      "cargadores",
-      "oferta"
-    ],
+    "tags": ["cargadores", "oferta"],
     "inStock": true,
     "description": "Carga rápida oficial para iPhone y iPad."
   },
@@ -381,11 +321,9 @@
     "category": "accesorios",
     "condition": "nuevo",
     "price": 99000,
-    "image": "/images/products/charger-45w.png",
+    "image": "https://images.pexels.com/photos/4219863/pexels-photo-4219863.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
     "featured": false,
-    "tags": [
-      "cargadores"
-    ],
+    "tags": ["cargadores"],
     "inStock": true,
     "description": "Super Fast Charging 2.0 para Galaxy."
   },
@@ -397,12 +335,9 @@
     "condition": "nuevo",
     "price": 999000,
     "compareAtPrice": 1099000,
-    "image": "/images/products/airpods-pro.png",
+    "image": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?auto=format&fit=crop&w=800&h=800&q=80",
     "featured": true,
-    "tags": [
-      "audifonos",
-      "oferta"
-    ],
+    "tags": ["audifonos", "oferta"],
     "inStock": true,
     "description": "ANC adaptativo, audio espacial y estuche MagSafe."
   },
@@ -413,11 +348,9 @@
     "category": "accesorios",
     "condition": "nuevo",
     "price": 699000,
-    "image": "/images/products/galaxy-buds.png",
+    "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=800&h=800&q=80",
     "featured": false,
-    "tags": [
-      "audifonos"
-    ],
+    "tags": ["audifonos"],
     "inStock": true,
     "description": "ANC inteligente y diseño premium Galaxy AI."
   },
@@ -429,13 +362,9 @@
     "condition": "nuevo",
     "price": 449000,
     "compareAtPrice": 499000,
-    "image": "/images/products/jbl-flip6.png",
+    "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=800&h=800&q=80",
     "featured": true,
-    "tags": [
-      "parlantes",
-      "oferta",
-      "oferta-dia"
-    ],
+    "tags": ["parlantes", "oferta", "oferta-dia"],
     "season": "remate",
     "inStock": true,
     "description": "IP67, sonido potente y hasta 12 h de batería."
@@ -447,11 +376,9 @@
     "category": "accesorios",
     "condition": "nuevo",
     "price": 279000,
-    "image": "/images/products/sony-xb100.png",
+    "image": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=800&h=800&q=80",
     "featured": false,
-    "tags": [
-      "parlantes"
-    ],
+    "tags": ["parlantes"],
     "inStock": true,
     "description": "Compacto, resistente al agua, graves Extra Bass."
   },
@@ -462,11 +389,9 @@
     "category": "accesorios",
     "condition": "nuevo",
     "price": 89000,
-    "image": "/images/products/cable-usbc.png",
+    "image": "https://images.unsplash.com/photo-1625948515291-69613efd103f?auto=format&fit=crop&w=800&h=800&q=80",
     "featured": false,
-    "tags": [
-      "cargadores"
-    ],
+    "tags": ["cargadores"],
     "inStock": true,
     "description": "Cable certificado para carga y datos."
   },
@@ -477,11 +402,9 @@
     "category": "accesorios",
     "condition": "nuevo",
     "price": 189000,
-    "image": "/images/products/magsafe.png",
+    "image": "https://images.unsplash.com/photo-1621330396173-e41b1cafd17f?auto=format&fit=crop&w=800&h=800&q=80",
     "featured": false,
-    "tags": [
-      "cargadores"
-    ],
+    "tags": ["cargadores"],
     "inStock": true,
     "description": "Carga inalámbrica magnética hasta 15W."
   }

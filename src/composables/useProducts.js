@@ -2,28 +2,24 @@ import { computed } from 'vue'
 import productsData from '../data/products.json'
 import campaignsData from '../data/campaigns.json'
 
-/** Fallback solo si el producto no trae imagen propia */
 const FALLBACK_IMAGES = {
-  iphone: '/images/real/smartphone-iphone.jpg',
-  'otras-marcas': '/images/real/smartphone-android.jpg',
-  'usados-seminuevos': '/images/real/smartphone-android.jpg',
-  ipad: '/images/real/tablet-ipad.jpg',
-  macbook: '/images/real/laptop-macbook.jpg',
-  accesorios: '/images/real/earbuds.jpg',
-  audifonos: '/images/real/earbuds.jpg',
-  parlantes: '/images/real/speaker.jpg'
+  iphone: 'https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop',
+  'otras-marcas': 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&h=800&q=80',
+  'usados-seminuevos': 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&h=800&q=80',
+  ipad: 'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&h=800&q=80',
+  macbook: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&h=800&q=80',
+  accesorios: 'https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?auto=format&fit=crop&w=800&h=800&q=80',
+  audifonos: 'https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?auto=format&fit=crop&w=800&h=800&q=80',
+  parlantes: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=800&h=800&q=80'
 }
 
 function resolveImage(product) {
-  // Prioridad 1: imagen específica del producto (products.json)
   if (product.image && String(product.image).trim()) {
     return product.image
   }
-  // Prioridad 2: por tags de accesorios
   const tags = product.tags || []
   if (tags.includes('audifonos')) return FALLBACK_IMAGES.audifonos
   if (tags.includes('parlantes')) return FALLBACK_IMAGES.parlantes
-  // Prioridad 3: por categoría
   if (FALLBACK_IMAGES[product.category]) return FALLBACK_IMAGES[product.category]
   return '/images/logo.png'
 }
@@ -34,9 +30,12 @@ const products = productsData.map((product) => ({
 }))
 const campaign = campaignsData
 
+/** Soporta rutas locales y URLs absolutas (https://...) */
 export function assetUrl(path) {
   if (!path) return ''
-  return `${import.meta.env.BASE_URL}${String(path).replace(/^\/+/, '')}`
+  const p = String(path)
+  if (/^https?:\/\//i.test(p)) return p
+  return `${import.meta.env.BASE_URL}${p.replace(/^\/+/, '')}`
 }
 
 export const CATEGORIES = [
